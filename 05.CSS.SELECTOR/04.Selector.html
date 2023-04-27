@@ -54,6 +54,42 @@
             background-color: lightseagreen;
         }
         /* 방문 전 */
+        .d1{
+            width: 0px;
+            border-bottom: 1px solid ;
+            transition: 0.7s;
+        }
+        .d1:hover{
+            width: 150px;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,purple);
+            border-image-slice: 1;
+        }
+        .d1>input{
+            border: 0px;
+            outline: 0px;
+        }
+        .d2{
+
+        }
+        .d2>input{
+
+        }.d2>label{
+
+        }
+        .d2>input[type="checkbox"]:checked+label{
+            color: lightgray;
+            text-decoration: line-through;
+        }
+        .d3{
+
+        }
+        .d3>input[type="checkbox"]{
+
+        }
+        .d3>input[type="text"]{
+
+        }
 
     </style>
 </head>
@@ -61,6 +97,33 @@
 <body>
     <a href="#" id="a1" class=" btn btn--primary">옳희넑우리</a>
     <a href="#" id="a2" class="btn btn--secondary">골골골골골</a>
+    <hr>
+    <div class="d1"><input type="text"></div>
+    <hr>
+    <div class="d2">
+        <input type="checkbox"> <label>체크박스테스트</label>
+    </div>
+    <hr>
+    <div class="d3">
+        <input type="checkbox" id="chk" class="chk">
+        <input type="text" id="txt" disabled>
+    </div>
+
+    <script>
+        const chkE1=document.querySelector('.chk');
+        const txtE1=document.querySelector('.txt');
+        chkE1.addEventListener('change',function(){
+            // alert("동작확인!");
+            if(this.checked)
+            {
+                txtE1.disabled=false;
+            }
+            else
+            {
+                txtE1.disabled=true;
+            }
+        });
+    </script>
 </body>
 
 </html>
