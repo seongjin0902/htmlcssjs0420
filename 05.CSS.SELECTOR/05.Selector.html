@@ -50,6 +50,37 @@
             background-image: url("./image/female_FILL0_wght400_GRAD0_opsz48.svg");
             background-size: 100%;
         }
+        .d3{
+
+        }
+        .d3>input[type="checkbox"]{
+            display: none;
+        }
+        .d3>label{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 30%;
+
+        }
+        #climing:checked+label{
+            background-image: url("./image/hiking_FILL0_wght400_GRAD0_opsz48.svg");
+            background-size: 100%;
+        }
+        #swimming:checked+label{
+            background-image: url("./image/pool_FILL0_wght400_GRAD0_opsz48.svg");
+            background-size: 100%;
+        }
+        #reading:checked+label{
+            background-image: url("./image/sports_esports_FILL0_wght400_GRAD0_opsz48.svg");
+            background-size: 100%;
+        }
+        #running:checked+label{
+            background-image: url("./image/sprint_FILL0_wght400_GRAD0_opsz48.svg");
+            background-size: 100%;
+        }
+
     </style>
 </head>
 
@@ -61,7 +92,7 @@
         <input type="radio" name="gender" value="male" id="r1"> <label for="r1">남</label>
         <input type="radio" name="gender" value="female" id="r2"> <label for="r2">여</label>
     </div>
-    <div>
+    <div class="d3">
         <!-- 취미 각각에 맞는 이미지를 찾아서 label의 백그라운드로 하기-->
         <input type="checkbox" id="climing"><label for="climing">등산</label>
         <input type="checkbox" id="swimming"><label for="swimming">수영</label>

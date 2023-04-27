@@ -40,11 +40,49 @@
             background-image: url("./image/female_FILL0_wght400_GRAD0_opsz48.svg");
             background-size: 100%;
         }
+        .d2{
+
+        }
+        .d2>ul{
+            list-style: none;
+            padding: 0px;
+        }
+        .d2>ul>li{
+            width: 120px;
+            height: 35px;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 35px;
+        }
+        .d2>ul>li>a{
+            display: block;
+            text-decoration: none;
+        }
+        .d2>ul>li>a::before{
+            content: '🤢';
+            /* background-image: url("./image/male_FILL0_wght400_GRAD0_opsz48.svg");
+            width: 35px;
+            height: 30px;
+            display: inline-block;
+            background-size: 100%; */
+        }
+        .d2>ul>li>a::after{
+            content: '👀';
+        }
     </style>
 </head>
 
 <body>
     <div class="d1">오구</div>
+    <hr>
+    <div class="d2">
+        <ul>
+            <li><a href="">MENU1</a></li>
+            <li><a href="">MENU2</a></li>
+            <li><a href="">MENU3</a></li>
+            <li><a href="">MENU4</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
