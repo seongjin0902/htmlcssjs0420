@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- reset css -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <style>
+        body{
+            height: 3000px;
+        }
+        #menu{
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+            background-color: beige;
+            position: fixed;
+            width: 100vw;
+        }
+        #menu>li{
+            width: 120px;
+            position: relative;
+            line-height: 30px;
+        }
+        #menu>li>a{
+            display: block;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #menu>li>ul{
+            position: absolute;
+            left: 0px;
+            top: 30px;
+            display: none;
+            background-color: wheat;
+            width: 100%;
+            text-align: center;
+        }
+        #menu>li>ul>li{}
+        #menu>li>ul>li>a{}
+        #menu>li:hover ul{
+            display: block;
+        }
+        .quickMenu{
+            width: 100px;
+            height: 600px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: blueviolet;
+            position: fixed;
+            left: 90%;
+            top: 30%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="quickMenu">
+
+    </div>
+    <ul id="menu">
+        <li>
+            <a href="">MENU1</a>
+            <ul>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">MENU2</a>
+            <ul>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">MENU3</a>
+            <ul>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+                <li><a href="">SUB오구</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div style="height:600px;background-color: aquamarine;"></div>
+    <div style="height:600px;background-color: skyblue;"></div>
+    <div style="height:600px;background-color: lightgreen;"></div>
+</body>
+
+</html>
