@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 150px;
+            height: 150px;
+            perspective: 1000px;
+            border: 1px solid black;
+            position: fixed;
+            left: 0px; right: 0px; top: 0px; bottom: 0px;
+            margin: auto;
+
+
+        }
+
+        .container>.card {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s;
+        }
+
+        .container>.card>.front,
+        .container>.card>.back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+            /* retate(100deg)일 때 hidden처리*/
+            backface-visibility: hidden;
+            border-radius: 50%;
+        }
+
+
+        .container>.card>.front {
+            background-color: skyblue;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMpJeHeOV1IL9BBCXf7h7r1ob3x6CSerQUyhrylaU_MUEjuENd0b-UXB-SkFPGHBnB09c&usqp=CAU);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .container>.card>.back {
+            background-color: lightslategray;
+            /* back은 기본적으로 hidden 처리 */
+            transform: rotateY(180deg);
+            font-size: 1rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card:hover {
+            /* front 180deg back 360deg */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">돌려봐</div>
+            <div class="back">
+                쳐지지지지직
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
