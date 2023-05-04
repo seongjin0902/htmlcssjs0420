@@ -3,8 +3,6 @@
 }
 
 .wrapper>main>section{
-    height: 250px;
-    line-height: 250px;
 }
 
 .wrapper>main>section:nth-child(1){
@@ -12,19 +10,16 @@
     display: flex;
     margin: 0 auto;
     border: 1px solid;
+    line-height: 400px;
 
 }
 .wrapper>main>section:nth-child(1)>aside{
     border: 1px solid;
     flex-grow: 1;
-    line-height: 300px;
-
-  
 }
 .wrapper>main>section:nth-child(1)>article{
     border: 1px solid;
-    flex-grow: 3;
-    line-height: 300px;
+    flex-grow: 7;
 
 }
 .wrapper>main>section:nth-child(2){
@@ -81,11 +76,9 @@
 .container>.card>.back{
     background-color: blue;
     color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
+    line-height: 150px;
 }
 .container:hover .card{
     transform: rotateY(180deg);

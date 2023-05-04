@@ -1,23 +1,23 @@
 .wrapper>main{
-    display: none;
+
 }
 
 .wrapper>main>section{
-    display: none;
+
 }
 
 .wrapper>main>section:nth-child(1){
-    display: none;
+
 }
 .wrapper>main>section:nth-child(1)>aside{
-    display: none;
+
 }
 .wrapper>main>section:nth-child(1)>article{
-    display: none;
+
 }
 
 .wrapper>main>section:nth-child(2){
-    display: none;
+
 }
 
 
