@@ -1,0 +1,49 @@
+.wrapper>main{
+    display: none;
+}
+
+.wrapper>main>section{
+    display: none;
+}
+
+.wrapper>main>section:nth-child(1){
+    display: none;
+}
+.wrapper>main>section:nth-child(1)>aside{
+    display: none;
+}
+.wrapper>main>section:nth-child(1)>article{
+    display: none;
+}
+
+.wrapper>main>section:nth-child(2){
+    display: none;
+}
+
+
+/* BANNER */
+.container{
+    
+   
+}
+.container>.card{
+    
+}
+.container>.card>.front,
+.container>.card>.back
+{
+    
+}
+
+.container>.card>.front{
+   
+}
+.container>.card>.front:hover{
+   
+}
+.container>.card>.back{
+   
+}
+.container:hover .card{
+   
+}

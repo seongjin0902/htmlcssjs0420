@@ -1,0 +1,105 @@
+.wrapper>main{
+    border : 1px solid gray;
+    text-align:center;
+}
+
+.wrapper>main>section{
+    border : 1px solid gray;
+    height : 400px;
+    line-height:400px;
+}
+
+.wrapper>main>section:nth-child(1){
+    display:flex;
+
+}
+.wrapper>main>section:nth-child(1)>aside{
+    width:200px;
+    border:1px solid gray;
+}
+.wrapper>main>section:nth-child(1)>article{
+    flex-grow: 1;
+    border : 1px solid gray;
+}
+.wrapper>main>section:nth-child(2){
+
+
+}
+
+
+
+/* banner */
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width:150px;
+    height:150px;
+    perspective: 1000px;
+    /* border:1px solid gray; */
+    position:fixed;
+    left:0px;right:0px;top:0px;bottom:0px;
+    margin:auto;
+
+   
+}
+.container>.card{
+    width:150px;
+    height:150px;
+    position:relative;
+    line-height: 150px;
+    transform-style:preserve-3d;
+    transition: 1s;
+    font-size:3rem;
+}
+.container>.card>.front,
+.container>.card>.back
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;top:0px;
+
+    /* rotateY(180deg) 일때 hidden처리 */
+    backface-visibility: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px lightgray;
+}
+
+.container>.card>.front{
+    /* background-color:orange; */
+    /* background-image: url("https://img.danawa.com/prod_img/500000/609/014/img/3014609_1.jpg?shrink=330:*&_v=20220524144914"); */
+    /* background-size:contain; */
+  
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* background-clip: content-box; */
+    /* padding:1px; */
+    /* background-repeat: no-repeat; */
+    /* border: 5px solid white;      */
+    opacity: 0.8;
+    background-color:orange;
+    
+}
+.container>.card>.front:hover{
+    opacity: 1;
+}
+.container>.card>.back{
+    background-color:royalblue;
+    /* back은 기본적으로 hidden처리 */
+    transform:rotateY(180deg);
+
+    font-size:0.4rem;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height:12px;
+}
+.container:hover .card{
+    /* Front : 180deg , Back : 360deg */
+    transform:rotateY(180deg);
+}

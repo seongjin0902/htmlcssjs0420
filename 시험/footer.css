@@ -1,0 +1,32 @@
+.wrapper>footer{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.wrapper>footer>.footer-top{
+    border: 1px solid black;
+    height: 20px;
+}
+.wrapper>footer>.footer-top>ul{
+    display: flex;
+    justify-content: center;
+}
+.wrapper>footer>.footer-top>ul>li{
+    border: 1px solid black;
+    width: 70px;
+    height: 16px;
+    line-height: 16px;
+}
+.wrapper>footer>.footer-top>ul>li>a{
+
+}
+
+.wrapper>footer>.footer-body{
+    border: 1px solid black;
+    height: 50px;
+}
+
+.wrapper>footer>.footer-bottom{
+    border: 1px solid black;
+    height: 20px;
+}
