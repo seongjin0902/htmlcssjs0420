@@ -6,3 +6,6 @@ const boxEl = document.querySelector('.BOX');
 boxEl.addEventListener('click',()=>{
     boxEl.style.backgroundColor="lightgreen";
 })
+
+
+

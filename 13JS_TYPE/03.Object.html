@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="poppi.sound()">짖어!</button><br/>
+    <button onclick="poppi.toString()">확인</button><br/>
+    
+    <script>
+        const poppi ={
+            //속성
+            name : "뽀삐",
+
+            kind : "포메라니안",
+            age : 1,
+            //메서드
+            sound : function(){
+                alert(this.name + "이(가) 짖습니다!");
+            },
+            toString : function(){
+                alert("이름 : " + this.name + "\n나이 : " + this.age + "\n견종 : " + this.kind);
+            }
+        }
+        // poppi.sound();
+        // poppi.toString();
+
+        //다음 object를 만들어서 화면에 출력합니다.
+        // object명 : myCar
+        //속성:값
+        //owner:"소유자",category="차종",fuelkind="가솔린/디젤/LPG",speed="현재속도"
+        //기능
+        //accel : 엑셀을 밟습니다가 출력(alert)
+        //showInfo : 속성정보 모두 출력(alert)
+
+        const myCar ={
+            
+            onwer:"오구",
+            category : "포르쉐",
+            fuelkind : "가솔린",
+            speed : "400km",
+
+            accel : function(){
+                alert("엑셀을 밟습니다.");
+            },
+            showInfo : function(){
+                alert("소유자 : "+this.onwer+"\n차종 : "+this.category+"\n연료 : "+this.fuelkind+"\n속도 : "+this.speed);
+
+            }
+        }
+        myCar.accel();
+        myCar.showInfo();
+
+
+
+    </script>
+
+
+</body>
+</html>
